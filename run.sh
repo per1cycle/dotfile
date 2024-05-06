@@ -18,6 +18,9 @@ if [ ! -f "$VIM_PLUG" ]; then
   curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 fi
+echo "move to home"
+yes | cp .vimrc ~/
+yes | cp .bashrc ~/
 
-yes | cp -rf .vimrc ~/
-yes | cp -rf .bashrc ~/
+source $HOME/.bashrc
+

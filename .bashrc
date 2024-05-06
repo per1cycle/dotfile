@@ -164,8 +164,14 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
-#export http_proxy="172.26.0.1:7890"
-#export https_proxy="172.26.0.1:7890"
 export RISCV=/opt/riscv 
 export PATH=$RISCV/bin:$PATH
 . "$HOME/.cargo/env"
+
+# alias vim 
+alias v="vim"
+alias vi="vim"
+alias vimm="vim"
+
+
+
