@@ -145,7 +145,7 @@ source $OSH/oh-my-bash.sh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('$HOME/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$("$HOME/miniconda3/bin/conda" 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
@@ -172,6 +172,13 @@ export PATH=$RISCV/bin:$PATH
 alias v="vim"
 alias vi="vim"
 alias vimm="vim"
+mkcd(){
+  if [ -d $1 ]; then
+    echo "$1 exists."
+  else 
+    mkdir $1 && cd $1
+  fi
+}
 
 clear
 
