@@ -2,6 +2,11 @@
 OH_MY_BASH="$HOME/.oh-my-bash"
 VIM_PLUG="$HOME/.vim/autoload/plug.vim"
 
+detectdepend(){
+  sudo apt update 
+  sudo apt install git gcc make cmake vim curl -y
+}
+
 detectcurl(){
   echo "detect curl..."
   # install curl
@@ -41,9 +46,13 @@ detectvp(){
   fi
 }
 
+detectdepend
 detectcurl
 detectcs
+
+# TODO: fix after installed omb stop installing
 detectomb
+
 detectvp
 
 echo "save old config"
