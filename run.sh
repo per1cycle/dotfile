@@ -4,7 +4,7 @@ VIM_PLUG="$HOME/.vim/autoload/plug.vim"
 
 detectdepend(){
   sudo apt update 
-  sudo apt install git gcc make cmake vim curl -y
+  sudo apt install git gcc g++ make cmake vim curl -y
 }
 
 detectcurl(){
