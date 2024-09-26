@@ -1,8 +1,8 @@
 " common config 
-set tabstop=2
+set tabstop=4
 set shiftwidth=4
 set nu
-set scrolloff=5
+set scrolloff=15
 set autoindent
 set cursorline
 set foldmethod=indent
