@@ -1,6 +1,6 @@
 " common config 
 set tabstop=2
-set shiftwidth=2
+set shiftwidth=4
 set nu
 set scrolloff=5
 set autoindent
@@ -17,6 +17,7 @@ set autowrite
 set autowriteall
 set wildmenu
 
+# prep vim plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -66,11 +67,10 @@ inoremap <F2>  <C-O><C-W>W
 ""let g:ycm_file_type_
 "#short cuts
 
-"注意，以下都是在normal mode下的按键映射
-"ctrl n 新建标签页
-"ctrl q 删除标签页
-"ctrl <left> <right> 切换标签页
-"ctrl Q 退出一个窗口
+"     In normal mode
+"ctrl n new tab
+"ctrl <left> <right> switch between tab
+"ctrl Q exit a tab
 nnoremap <C-n>      :tabnew<CR>
 nnoremap <C-w>      :tabclose<CR>
 nnoremap <C-up>     :tabprevious<CR>
@@ -78,7 +78,7 @@ nnoremap <C-down>  :tabnext<CR>
 nnoremap <F4>       :tabclose<CR>
 nnoremap <C-d>      :q!<CR>
 
-"tab <1-6>切换标签页
+"tab <1-6> switch between tab
 nnoremap <tab>1   :tabn 1 <cr>
 nnoremap <tab>2   :tabn 2 <cr>
 nnoremap <tab>3   :tabn 3 <cr>
@@ -86,7 +86,7 @@ nnoremap <tab>4   :tabn 4 <cr>
 nnoremap <tab>5   :tabn 5 <cr>
 nnoremap <tab>6   :tabn 6 <cr>
 
-"ctrl z 撤销操作，ctrl y恢复操作
+"ctrl z, ctrl y for redo/do
 nnoremap <C-z>    :undo<CR>
 nnoremap <C-y>    :redo<CR>
 
@@ -122,15 +122,3 @@ inoremap <leader>vt :vert term<CR>
 
 nnoremap <leader>ht :term<CR>
 inoremap <leader>ht :term<CR>
-
-
-
-
-
-
-
-
-
-
-
-
