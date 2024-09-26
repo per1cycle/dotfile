@@ -127,7 +127,6 @@ source $OSH/oh-my-bash.sh
 # else
 #   export EDITOR='mvim'
 # fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -164,10 +163,13 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
+export PATH=/usr/local/go/bin:$PATH
+export {http,https}_proxy="172.31.0.1:7890"
 export RISCV=/opt/riscv 
 export PATH=$RISCV/bin:$PATH
-. "$HOME/.cargo/env"
+export EDITOR="vim"
 
+. "$HOME/.cargo/env"
 # alias vim 
 alias v="vim"
 alias vi="vim"
@@ -182,5 +184,4 @@ mkcd(){
 
 clear
 
-cowsay hello
-
+cowsay cow bless me 
