@@ -45,12 +45,7 @@ nnoremap <leader>gpul :Git pull <CR>
 
 
 "#short cut mapping for multi tab 
-"#常规F3影射为下一个多窗口，f2反之
 
-nnoremap <F3>  <C-W>w
-inoremap <F3>  <C-O><C-W>w
-nnoremap <F2>  <C-S-W>W
-inoremap <F2>  <C-O><C-W>W
 "let g:ycm_global_ycm_extra_conf = '~/.vim/pack/z/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 "let g:ycm_global_ycm_extra_conf='~/.vim/plugged/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
 "let g:ycm_auto_hover=''
