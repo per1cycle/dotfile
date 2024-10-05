@@ -67,10 +67,8 @@ nnoremap <leader>gpul :Git pull <CR>
 "ctrl <left> <right> switch between tab
 "ctrl Q exit a tab
 nnoremap <C-n>      :tabnew<CR>
-nnoremap <C-w>      :tabclose<CR>
 nnoremap <C-up>     :tabprevious<CR>
 nnoremap <C-down>  :tabnext<CR>
-nnoremap <F4>       :tabclose<CR>
 nnoremap <C-d>      :q!<CR>
 
 "tab <1-6> switch between tab
@@ -80,14 +78,6 @@ nnoremap <tab>3   :tabn 3 <cr>
 nnoremap <tab>4   :tabn 4 <cr>
 nnoremap <tab>5   :tabn 5 <cr>
 nnoremap <tab>6   :tabn 6 <cr>
-
-"ctrl z, ctrl y for redo/do
-nnoremap <C-z>    :undo<CR>
-nnoremap <C-y>    :redo<CR>
-
-inoremap <C-z>    :undo<CR>
-inoremap <C-y>    :redo<CR>
-
 
 "nnoremap <leader>fi :YcmCompleter FixIt<cr>
 "nnoremap <leader>gt :YcmCompleter GoTo<cr>
@@ -103,12 +93,6 @@ vnoremap <C-v> "+p
 
 nnoremap <C-g> :GFiles<CR>
 nnoremap <C-f> :Files<CR>
-
-" fold method
-" fold all
-nnoremap <leader>fa zM<CR>
-nnoremap <leader>ua zR<CR>
-nnoremap <leader>uf zr<CR>
 
 " terminal support
 nnoremap <leader>vt :vert term<CR>
