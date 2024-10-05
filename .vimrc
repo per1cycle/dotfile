@@ -64,8 +64,8 @@ nnoremap <tab>6   :tabn 6 <cr>
 nnoremap <leader>nt :NERDTreeToggle<CR>
 
 " paste from system clip board
-vnoremap <C-c> "+y
-vnoremap <C-v> "+p
+map <C-Insert> "+y
+map <S-Insert> "+p
 
 " short cut for fzf
 nnoremap <C-g> :GFiles<CR>
