@@ -11,7 +11,7 @@ set bg=dark
 set spelllang=en_us
 set hlsearch
 set mouse=a
-
+set paste
 set showmatch
 set autowrite
 set autowriteall
