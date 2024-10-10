@@ -83,6 +83,9 @@ inoremap <M-left>       :bprevious<CR>
 nnoremap <M-right>      :bnext<CR>
 inoremap <M-right>      :bnext<CR>
 
+" for relative line editing
+map 	<F2>			:set relativenumber<CR>
+map 	<F3>			:set relativenumber!<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "let g:ycm_global_ycm_extra_conf = '~/.vim/pack/z/YouCompleteMe/third_party/ycmd/.ycm_extra_conf.py'
